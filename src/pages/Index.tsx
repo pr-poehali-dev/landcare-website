@@ -16,7 +16,7 @@ const services = [
     icon: "Scissors",
     title: "Покос травы",
     description: "Качественный покос территорий любой площади",
-    image: "https://cdn.poehali.dev/files/b73df019-d698-458d-9d96-bd9506e18c21.jpg"
+    image: "https://cdn.poehali.dev/files/5f36fb0b-89b3-4277-b2f7-6bdc12f621c5.jpg"
   },
   {
     icon: "Leaf",
