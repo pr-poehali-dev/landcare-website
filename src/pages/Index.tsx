@@ -69,9 +69,9 @@ const Index = () => {
           <div className="relative group">
             <div className="absolute -inset-2 bg-gradient-to-r from-[#4DB8A8]/20 to-[#FF8A3D]/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
             <img 
-              src="https://cdn.poehali.dev/files/88d8f09e-2663-4334-8041-0c1a2df39967.jpg" 
+              src="/img/d48849e6-b3bf-4dfd-866c-1cd09a872bba.jpg" 
               alt="Удачные заботы" 
-              className="h-16 relative drop-shadow-2xl mix-blend-lighten"
+              className="h-20 relative drop-shadow-2xl"
               style={{ filter: 'drop-shadow(0 0 20px rgba(77, 184, 168, 0.3))' }}
             />
           </div>
@@ -228,9 +228,9 @@ const Index = () => {
               <div className="relative group mb-4">
                 <div className="absolute -inset-3 bg-gradient-to-r from-[#4DB8A8]/20 to-[#FF8A3D]/20 rounded-2xl blur-xl"></div>
                 <img 
-                  src="https://cdn.poehali.dev/files/88d8f09e-2663-4334-8041-0c1a2df39967.jpg" 
+                  src="/img/d48849e6-b3bf-4dfd-866c-1cd09a872bba.jpg" 
                   alt="Удачные заботы" 
-                  className="h-16 mx-auto md:mx-0 relative mix-blend-lighten"
+                  className="h-20 mx-auto md:mx-0 relative"
                   style={{ filter: 'drop-shadow(0 0 20px rgba(77, 184, 168, 0.3))' }}
                 />
               </div>
