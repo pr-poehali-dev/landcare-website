@@ -63,50 +63,47 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1a1a1a] text-white font-['Open_Sans']">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a]/95 backdrop-blur-sm border-b border-white/10">
-        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
-          <div className="relative group">
-            <img 
-              src="https://cdn.poehali.dev/files/3424d412-6840-4bb8-8de1-76645fe846ae.jpg" 
-              alt="Удачные заботы" 
-              className="h-24 relative drop-shadow-2xl"
-            />
-          </div>
+    <div className="min-h-screen bg-white font-['Open_Sans']">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+          <img 
+            src="https://cdn.poehali.dev/files/2cb4fffa-cbb5-4db1-a5cb-587548d42493.jpg" 
+            alt="Удачные заботы" 
+            className="h-16 md:h-20"
+          />
           <a href="tel:+79235335301" className="flex items-center gap-2 text-[#4DB8A8] hover:text-[#FF8A3D] transition-colors">
             <Icon name="Phone" size={20} />
-            <span className="font-semibold">+7 (923) 533-53-01</span>
+            <span className="font-semibold hidden sm:inline">+7 (923) 533-53-01</span>
           </a>
         </div>
       </header>
 
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-28 pb-20 px-4 bg-gradient-to-br from-[#4DB8A8]/5 via-white to-[#FF8A3D]/5">
         <div className="container mx-auto text-center">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8 animate-fade-in">
             <img 
-              src="https://cdn.poehali.dev/files/3424d412-6840-4bb8-8de1-76645fe846ae.jpg" 
+              src="https://cdn.poehali.dev/files/2cb4fffa-cbb5-4db1-a5cb-587548d42493.jpg" 
               alt="Удачные заботы" 
-              className="h-48 md:h-64 drop-shadow-2xl"
+              className="h-48 md:h-72 drop-shadow-2xl"
             />
           </div>
-          <h1 className="text-4xl md:text-6xl font-['Montserrat'] font-bold mb-6 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] bg-clip-text text-transparent">
-            Благоустройство территорий
+          <h1 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-6 text-gray-800">
+            Профессиональное благоустройство территорий
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Профессиональный уход за вашим участком. Работаем ежедневно с 8:00 до 23:00
+          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Работаем ежедневно с 8:00 до 23:00. Качество и ответственность — наш приоритет
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-[#4DB8A8] hover:bg-[#3da395] text-black font-semibold text-lg px-8 py-6 rounded-xl shadow-lg shadow-[#4DB8A8]/20"
+              className="bg-[#4DB8A8] hover:bg-[#3da395] text-white font-semibold text-lg px-8 py-6 rounded-2xl shadow-lg shadow-[#4DB8A8]/20 hover:shadow-[#4DB8A8]/30 transition-all hover:scale-105"
             >
               <Icon name="MessageCircle" size={24} className="mr-2" />
               Написать в WhatsApp
             </Button>
             <Button 
               onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
-              variant="outline"
-              className="border-[#FF8A3D] text-[#FF8A3D] hover:bg-[#FF8A3D] hover:text-black font-semibold text-lg px-8 py-6 rounded-xl"
+              className="bg-[#FF8A3D] hover:bg-[#e67a2d] text-white font-semibold text-lg px-8 py-6 rounded-2xl shadow-lg shadow-[#FF8A3D]/20 hover:shadow-[#FF8A3D]/30 transition-all hover:scale-105"
             >
               Оставить заявку
             </Button>
@@ -114,18 +111,20 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-[#0f0f0f]">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-['Montserrat'] font-bold text-center mb-4">
-            Наши услуги
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-16"></div>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-4 text-gray-800">
+              Наши услуги
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto"></div>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Card 
                 key={index} 
-                className="bg-[#1a1a1a] border-white/10 hover:border-[#4DB8A8] transition-all duration-300 group overflow-hidden"
+                className="bg-white border-2 border-gray-100 hover:border-[#4DB8A8] transition-all duration-300 group overflow-hidden hover:shadow-xl"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img 
@@ -133,16 +132,16 @@ const Index = () => {
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent opacity-60"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-[#4DB8A8]/10 rounded-lg group-hover:bg-[#4DB8A8]/20 transition-colors">
+                    <div className="p-3 bg-[#4DB8A8]/10 rounded-xl group-hover:bg-[#4DB8A8]/20 transition-colors">
                       <Icon name={service.icon} size={28} className="text-[#4DB8A8]" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-['Montserrat'] font-semibold mb-2">{service.title}</h3>
-                      <p className="text-gray-400">{service.description}</p>
+                      <h3 className="text-xl font-['Montserrat'] font-semibold mb-2 text-gray-800">{service.title}</h3>
+                      <p className="text-gray-600">{service.description}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -152,49 +151,51 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="form" className="py-20 px-4">
+      <section id="form" className="py-20 px-4 bg-gradient-to-br from-[#4DB8A8]/5 to-[#FF8A3D]/5">
         <div className="container mx-auto max-w-2xl">
-          <h2 className="text-4xl md:text-5xl font-['Montserrat'] font-bold text-center mb-4">
-            Оставьте заявку
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-8"></div>
-          <p className="text-center text-gray-400 mb-12">
-            Заполните форму и мы свяжемся с вами в WhatsApp
-          </p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-4 text-gray-800">
+              Оставьте заявку
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-6"></div>
+            <p className="text-gray-600">
+              Заполните форму и мы свяжемся с вами в WhatsApp
+            </p>
+          </div>
 
-          <Card className="bg-[#1a1a1a] border-white/10">
+          <Card className="bg-white border-2 border-gray-100 shadow-xl">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium mb-2">Ваше имя</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700">Ваше имя</label>
                   <Input
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="bg-[#0f0f0f] border-white/20 focus:border-[#4DB8A8]"
+                    className="bg-white border-gray-200 focus:border-[#4DB8A8] focus:ring-[#4DB8A8]"
                     placeholder="Иван Иванов"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Телефон</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700">Телефон</label>
                   <Input
                     required
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="bg-[#0f0f0f] border-white/20 focus:border-[#4DB8A8]"
+                    className="bg-white border-gray-200 focus:border-[#4DB8A8] focus:ring-[#4DB8A8]"
                     placeholder="+7 (___) ___-__-__"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Услуга</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700">Услуга</label>
                   <select
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({...formData, service: e.target.value})}
-                    className="w-full bg-[#0f0f0f] border border-white/20 focus:border-[#4DB8A8] rounded-md px-3 py-2 text-white"
+                    className="w-full bg-white border border-gray-200 focus:border-[#4DB8A8] focus:ring-[#4DB8A8] rounded-lg px-3 py-2 text-gray-800"
                   >
                     <option value="">Выберите услугу</option>
                     {services.map((service, index) => (
@@ -204,18 +205,18 @@ const Index = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Сообщение</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700">Сообщение</label>
                   <Textarea
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="bg-[#0f0f0f] border-white/20 focus:border-[#4DB8A8] min-h-32"
+                    className="bg-white border-gray-200 focus:border-[#4DB8A8] focus:ring-[#4DB8A8] min-h-32"
                     placeholder="Расскажите о вашем проекте..."
                   />
                 </div>
 
                 <Button 
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] hover:opacity-90 text-black font-semibold text-lg py-6 rounded-xl"
+                  className="w-full bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] hover:opacity-90 text-white font-semibold text-lg py-6 rounded-2xl shadow-lg transition-all hover:scale-[1.02]"
                 >
                   Отправить в WhatsApp
                   <Icon name="Send" size={20} className="ml-2" />
@@ -226,25 +227,23 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="py-12 px-4 bg-[#0f0f0f] border-t border-white/10">
+      <footer className="py-12 px-4 bg-white border-t border-gray-100">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
-              <div className="mb-4">
-                <img 
-                  src="https://cdn.poehali.dev/files/3424d412-6840-4bb8-8de1-76645fe846ae.jpg" 
-                  alt="Удачные заботы" 
-                  className="h-24 mx-auto md:mx-0"
-                />
-              </div>
-              <p className="text-gray-400">
+              <img 
+                src="https://cdn.poehali.dev/files/2cb4fffa-cbb5-4db1-a5cb-587548d42493.jpg" 
+                alt="Удачные заботы" 
+                className="h-20 mx-auto md:mx-0 mb-4"
+              />
+              <p className="text-gray-600">
                 Профессиональное благоустройство территорий
               </p>
             </div>
             
             <div>
-              <h3 className="font-['Montserrat'] font-semibold text-lg mb-4">Контакты</h3>
-              <div className="space-y-2 text-gray-400">
+              <h3 className="font-['Montserrat'] font-semibold text-lg mb-4 text-gray-800">Контакты</h3>
+              <div className="space-y-2 text-gray-600">
                 <div className="flex items-center justify-center md:justify-start gap-2">
                   <Icon name="Phone" size={18} className="text-[#4DB8A8]" />
                   <a href="tel:+79235335301" className="hover:text-[#4DB8A8] transition-colors">
@@ -259,7 +258,7 @@ const Index = () => {
             </div>
 
             <div>
-              <h3 className="font-['Montserrat'] font-semibold text-lg mb-4">Свяжитесь с нами</h3>
+              <h3 className="font-['Montserrat'] font-semibold text-lg mb-4 text-gray-800">Свяжитесь с нами</h3>
               <Button 
                 onClick={handleWhatsAppClick}
                 className="bg-[#25D366] hover:bg-[#20BA5A] text-white"
@@ -270,7 +269,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="mt-12 pt-8 border-t border-white/10 text-center text-gray-500">
+          <div className="mt-12 pt-8 border-t border-gray-100 text-center text-gray-500">
             <p>&copy; 2024 Удачные заботы. Все права защищены.</p>
           </div>
         </div>
