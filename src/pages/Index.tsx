@@ -87,13 +87,13 @@ const Index = () => {
           <img src="https://cdn.poehali.dev/files/bb33ff4a-81cc-40d2-8f2d-0117df7e2828.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Poppins'] font-extrabold mb-4 md:mb-6 bg-gradient-to-r from-[#4DB8A8] via-[#FF8A3D] to-[#4DB8A8] bg-clip-text text-transparent drop-shadow-2xl px-2">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Poppins'] font-extrabold mb-4 md:mb-6 bg-gradient-to-r from-[#4DB8A8] via-[#FF8A3D] to-[#4DB8A8] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.3)] px-2" style={{WebkitTextStroke: '1px rgba(0,0,0,0.1)'}}>
             Удачные Заботы
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-800 font-semibold mb-6 md:mb-8 max-w-3xl mx-auto drop-shadow-lg px-2">
-            <span className="text-[#4DB8A8] font-bold">Всегда готовы</span> позаботиться о вашем участке. <span className="text-[#FF8A3D] font-bold">Профессиональное благоустройство</span> территорий с гарантией качества
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-900 font-bold mb-6 md:mb-8 max-w-3xl mx-auto [text-shadow:_1px_1px_4px_rgba(255,255,255,0.8),_-1px_-1px_4px_rgba(255,255,255,0.8)] px-2">
+            <span className="text-[#4DB8A8] [text-shadow:_2px_2px_6px_rgba(255,255,255,0.9),_-1px_-1px_4px_rgba(255,255,255,0.9)]">Всегда готовы</span> позаботиться о вашем участке. <span className="text-[#FF8A3D] [text-shadow:_2px_2px_6px_rgba(255,255,255,0.9),_-1px_-1px_4px_rgba(255,255,255,0.9)]">Профессиональное благоустройство</span> территорий с гарантией качества
           </p>
-          <p className="text-base md:text-lg font-bold mb-6 md:mb-8 drop-shadow-lg">
+          <p className="text-base md:text-lg font-extrabold mb-6 md:mb-8 [text-shadow:_2px_2px_6px_rgba(255,255,255,0.9),_-1px_-1px_4px_rgba(255,255,255,0.9)]">
             <span className="text-[#4DB8A8]">⏰ Работаем ежедневно</span> <span className="text-[#FF8A3D]">с 8:00 до 23:00</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
@@ -124,7 +124,7 @@ const Index = () => {
         </div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-10 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-extrabold mb-3 md:mb-4 bg-gradient-to-r from-[#FF8A3D] to-[#4DB8A8] bg-clip-text text-transparent drop-shadow-lg px-2">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-extrabold mb-3 md:mb-4 bg-gradient-to-r from-[#FF8A3D] to-[#4DB8A8] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.3)] px-2" style={{WebkitTextStroke: '1px rgba(0,0,0,0.1)'}}>
               Наши услуги
             </h2>
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto drop-shadow-md"></div>
@@ -150,8 +150,8 @@ const Index = () => {
                       <Icon name={service.icon} size={28} className="text-[#4DB8A8]" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-['Poppins'] font-bold mb-2 text-gray-900">{service.title}</h3>
-                      <p className="text-gray-700 font-medium">{service.description}</p>
+                      <h3 className="text-xl font-['Poppins'] font-extrabold mb-2 text-gray-950 [text-shadow:_1px_1px_3px_rgba(255,255,255,0.5)]">{service.title}</h3>
+                      <p className="text-gray-900 font-semibold [text-shadow:_1px_1px_2px_rgba(255,255,255,0.4)]">{service.description}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -171,12 +171,12 @@ const Index = () => {
         </div>
         <div className="container mx-auto max-w-2xl relative z-10">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-extrabold mb-3 md:mb-4 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] bg-clip-text text-transparent drop-shadow-lg px-2">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-extrabold mb-3 md:mb-4 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.3)] px-2" style={{WebkitTextStroke: '1px rgba(0,0,0,0.1)'}}>
               Оставьте заявку
             </h2>
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-4 md:mb-6 drop-shadow-md"></div>
-            <p className="text-sm md:text-base font-semibold drop-shadow-lg px-4">
-              <span className="text-gray-800">Заполните форму и мы свяжемся с вами в</span> <span className="text-[#25D366] font-bold">WhatsApp</span>
+            <p className="text-sm md:text-base font-bold [text-shadow:_1px_1px_4px_rgba(255,255,255,0.8),_-1px_-1px_3px_rgba(255,255,255,0.8)] px-4">
+              <span className="text-gray-900">Заполните форму и мы свяжемся с вами в</span> <span className="text-[#25D366] font-extrabold [text-shadow:_2px_2px_6px_rgba(255,255,255,0.9)]">WhatsApp</span>
             </p>
           </div>
 
