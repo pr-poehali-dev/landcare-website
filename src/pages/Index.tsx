@@ -65,12 +65,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#1a1a1a] text-white font-['Open_Sans']">
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a]/95 backdrop-blur-sm border-b border-white/10">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <img 
-            src="https://cdn.poehali.dev/files/88d8f09e-2663-4334-8041-0c1a2df39967.jpg" 
-            alt="Удачные заботы" 
-            className="h-12"
-          />
+        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
+          <div className="relative group">
+            <div className="absolute -inset-2 bg-gradient-to-r from-[#4DB8A8]/20 to-[#FF8A3D]/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+            <img 
+              src="https://cdn.poehali.dev/files/88d8f09e-2663-4334-8041-0c1a2df39967.jpg" 
+              alt="Удачные заботы" 
+              className="h-16 relative drop-shadow-2xl mix-blend-lighten"
+              style={{ filter: 'drop-shadow(0 0 20px rgba(77, 184, 168, 0.3))' }}
+            />
+          </div>
           <a href="tel:+79235335301" className="flex items-center gap-2 text-[#4DB8A8] hover:text-[#FF8A3D] transition-colors">
             <Icon name="Phone" size={20} />
             <span className="font-semibold">+7 (923) 533-53-01</span>
@@ -221,11 +225,15 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
-              <img 
-                src="https://cdn.poehali.dev/files/88d8f09e-2663-4334-8041-0c1a2df39967.jpg" 
-                alt="Удачные заботы" 
-                className="h-12 mx-auto md:mx-0 mb-4"
-              />
+              <div className="relative group mb-4">
+                <div className="absolute -inset-3 bg-gradient-to-r from-[#4DB8A8]/20 to-[#FF8A3D]/20 rounded-2xl blur-xl"></div>
+                <img 
+                  src="https://cdn.poehali.dev/files/88d8f09e-2663-4334-8041-0c1a2df39967.jpg" 
+                  alt="Удачные заботы" 
+                  className="h-16 mx-auto md:mx-0 relative mix-blend-lighten"
+                  style={{ filter: 'drop-shadow(0 0 20px rgba(77, 184, 168, 0.3))' }}
+                />
+              </div>
               <p className="text-gray-400">
                 Профессиональное благоустройство территорий
               </p>
