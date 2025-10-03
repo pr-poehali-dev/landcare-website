@@ -87,13 +87,13 @@ const Index = () => {
           <img src="https://cdn.poehali.dev/files/bb33ff4a-81cc-40d2-8f2d-0117df7e2828.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-['Montserrat'] font-bold mb-6 text-gray-800">
+          <h1 className="text-4xl md:text-6xl font-['Montserrat'] font-bold mb-6 text-gray-900 drop-shadow-lg">
             Удачные Заботы
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-800 mb-8 max-w-3xl mx-auto drop-shadow-md bg-white/80 backdrop-blur-sm py-4 px-6 rounded-2xl">
             Всегда готовы позаботиться о вашем участке. Профессиональное благоустройство территорий с гарантией качества
           </p>
-          <p className="text-lg text-gray-500 mb-8">
+          <p className="text-lg text-gray-700 mb-8 drop-shadow-md">
             Работаем ежедневно с 8:00 до 23:00
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -124,10 +124,10 @@ const Index = () => {
         </div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-4 text-gray-800">
+            <h2 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-4 text-gray-900 drop-shadow-lg">
               Наши услуги
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto drop-shadow-md"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -171,11 +171,11 @@ const Index = () => {
         </div>
         <div className="container mx-auto max-w-2xl relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-4 text-gray-800">
+            <h2 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-4 text-gray-900 drop-shadow-lg">
               Оставьте заявку
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-6"></div>
-            <p className="text-gray-600">
+            <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-6 drop-shadow-md"></div>
+            <p className="text-gray-800 drop-shadow-md bg-white/80 backdrop-blur-sm py-2 px-4 rounded-lg inline-block">
               Заполните форму и мы свяжемся с вами в WhatsApp
             </p>
           </div>
