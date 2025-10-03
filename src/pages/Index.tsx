@@ -87,7 +87,7 @@ const Index = () => {
           <img src="https://cdn.poehali.dev/files/bb33ff4a-81cc-40d2-8f2d-0117df7e2828.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Poppins'] font-black mb-4 md:mb-6 bg-gradient-to-r from-[#FF6B35] via-[#FFD93D] to-[#00B4A3] bg-clip-text text-transparent [text-shadow:_3px_3px_12px_rgba(0,0,0,0.5)] px-2 animate-pulse" style={{WebkitTextStroke: '2px rgba(0,0,0,0.2)'}}>
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Poppins'] font-black mb-4 md:mb-6 text-[#00B4A3] [text-shadow:_3px_3px_12px_rgba(255,255,255,1),_-2px_-2px_8px_rgba(255,255,255,1)] px-2" style={{WebkitTextStroke: '1.5px rgba(0,0,0,0.15)'}}>
             Удачные Заботы
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-slate-800 font-bold mb-6 md:mb-8 max-w-3xl mx-auto [text-shadow:_2px_2px_6px_rgba(255,255,255,0.95),_-1px_-1px_4px_rgba(255,255,255,0.95)] px-2">
