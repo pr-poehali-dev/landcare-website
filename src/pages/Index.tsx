@@ -80,10 +80,10 @@ const Index = () => {
 
       <section className="pt-28 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#4DB8A8]/5 via-white to-[#FF8A3D]/5"></div>
-        <div className="absolute top-10 right-10 w-96 h-96 opacity-5">
+        <div className="absolute top-10 right-10 w-96 h-96 opacity-15">
           <img src="https://cdn.poehali.dev/files/9e18c783-f673-4027-866c-f2dbc852e3cf.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 opacity-5">
+        <div className="absolute bottom-10 left-10 w-80 h-80 opacity-15">
           <img src="https://cdn.poehali.dev/files/bb33ff4a-81cc-40d2-8f2d-0117df7e2828.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto text-center relative z-10">
@@ -116,10 +116,10 @@ const Index = () => {
 
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-white"></div>
-        <div className="absolute top-0 left-0 w-full h-64 opacity-5">
+        <div className="absolute top-0 left-0 w-full h-64 opacity-15">
           <img src="https://cdn.poehali.dev/files/5f36fb0b-89b3-4277-b2f7-6bdc12f621c5.jpg" alt="" className="w-full h-full object-cover" />
         </div>
-        <div className="absolute bottom-0 right-0 w-2/3 h-96 opacity-5">
+        <div className="absolute bottom-0 right-0 w-2/3 h-96 opacity-15">
           <img src="https://cdn.poehali.dev/files/fffee30d-f980-4410-ac2d-db4e0e227c3e.jpg" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto relative z-10">
@@ -163,10 +163,10 @@ const Index = () => {
 
       <section id="form" className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#4DB8A8]/5 to-[#FF8A3D]/5"></div>
-        <div className="absolute top-20 left-0 w-96 h-96 opacity-5">
+        <div className="absolute top-20 left-0 w-96 h-96 opacity-15">
           <img src="https://cdn.poehali.dev/files/d54fdaa6-ac87-48d0-a83b-b69d9fac7dee.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
-        <div className="absolute bottom-0 right-20 w-80 h-80 opacity-5">
+        <div className="absolute bottom-0 right-20 w-80 h-80 opacity-15">
           <img src="https://cdn.poehali.dev/files/c8a16012-aaf6-4516-a05e-6f83329c1f42.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto max-w-2xl relative z-10">
