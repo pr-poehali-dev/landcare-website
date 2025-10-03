@@ -78,35 +78,35 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="pt-28 pb-20 px-4 relative overflow-hidden">
+      <section className="pt-24 md:pt-28 pb-12 md:pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#4DB8A8]/5 via-white to-[#FF8A3D]/5"></div>
-        <div className="absolute top-10 right-10 w-96 h-96 opacity-35">
+        <div className="absolute top-10 right-5 md:right-10 w-48 h-48 md:w-96 md:h-96 opacity-35">
           <img src="https://cdn.poehali.dev/files/9e18c783-f673-4027-866c-f2dbc852e3cf.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 opacity-35">
+        <div className="absolute bottom-10 left-5 md:left-10 w-40 h-40 md:w-80 md:h-80 opacity-35">
           <img src="https://cdn.poehali.dev/files/bb33ff4a-81cc-40d2-8f2d-0117df7e2828.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-['Montserrat'] font-bold mb-6 text-gray-900 drop-shadow-lg">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Montserrat'] font-bold mb-4 md:mb-6 text-gray-900 drop-shadow-lg px-2">
             Удачные Заботы
           </h1>
-          <p className="text-xl md:text-2xl text-gray-900 font-semibold mb-8 max-w-3xl mx-auto drop-shadow-lg">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-900 font-semibold mb-6 md:mb-8 max-w-3xl mx-auto drop-shadow-lg px-2">
             Всегда готовы позаботиться о вашем участке. Профессиональное благоустройство территорий с гарантией качества
           </p>
-          <p className="text-lg text-gray-800 font-semibold mb-8 drop-shadow-lg">
+          <p className="text-base md:text-lg text-gray-800 font-semibold mb-6 md:mb-8 drop-shadow-lg">
             Работаем ежедневно с 8:00 до 23:00
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-[#4DB8A8] hover:bg-[#3da395] text-white font-semibold text-lg px-8 py-6 rounded-2xl shadow-lg shadow-[#4DB8A8]/20 hover:shadow-[#4DB8A8]/30 transition-all hover:scale-105"
+              className="bg-[#4DB8A8] hover:bg-[#3da395] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#4DB8A8]/20 hover:shadow-[#4DB8A8]/30 transition-all hover:scale-105"
             >
-              <Icon name="MessageCircle" size={24} className="mr-2" />
+              <Icon name="MessageCircle" size={20} className="mr-2" />
               Написать в WhatsApp
             </Button>
             <Button 
               onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-[#FF8A3D] hover:bg-[#e67a2d] text-white font-semibold text-lg px-8 py-6 rounded-2xl shadow-lg shadow-[#FF8A3D]/20 hover:shadow-[#FF8A3D]/30 transition-all hover:scale-105"
+              className="bg-[#FF8A3D] hover:bg-[#e67a2d] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#FF8A3D]/20 hover:shadow-[#FF8A3D]/30 transition-all hover:scale-105"
             >
               Оставить заявку
             </Button>
@@ -114,23 +114,23 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 relative overflow-hidden">
+      <section className="py-12 md:py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-white"></div>
-        <div className="absolute top-0 left-0 w-full h-64 opacity-35">
+        <div className="absolute top-0 left-0 w-full h-32 md:h-64 opacity-35">
           <img src="https://cdn.poehali.dev/files/5f36fb0b-89b3-4277-b2f7-6bdc12f621c5.jpg" alt="" className="w-full h-full object-cover" />
         </div>
-        <div className="absolute bottom-0 right-0 w-2/3 h-96 opacity-35">
+        <div className="absolute bottom-0 right-0 w-2/3 h-48 md:h-96 opacity-35">
           <img src="https://cdn.poehali.dev/files/fffee30d-f980-4410-ac2d-db4e0e227c3e.jpg" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-4 text-gray-900 drop-shadow-lg">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Montserrat'] font-bold mb-3 md:mb-4 text-gray-900 drop-shadow-lg px-2">
               Наши услуги
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto drop-shadow-md"></div>
+            <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto drop-shadow-md"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {services.map((service, index) => (
               <Card 
                 key={index} 
@@ -161,28 +161,28 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="form" className="py-20 px-4 relative overflow-hidden">
+      <section id="form" className="py-12 md:py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#4DB8A8]/5 to-[#FF8A3D]/5"></div>
-        <div className="absolute top-20 left-0 w-96 h-96 opacity-35">
+        <div className="absolute top-10 md:top-20 left-0 w-48 h-48 md:w-96 md:h-96 opacity-35">
           <img src="https://cdn.poehali.dev/files/d54fdaa6-ac87-48d0-a83b-b69d9fac7dee.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
-        <div className="absolute bottom-0 right-20 w-80 h-80 opacity-35">
+        <div className="absolute bottom-0 right-5 md:right-20 w-40 h-40 md:w-80 md:h-80 opacity-35">
           <img src="https://cdn.poehali.dev/files/c8a16012-aaf6-4516-a05e-6f83329c1f42.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto max-w-2xl relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-4 text-gray-900 drop-shadow-lg">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Montserrat'] font-bold mb-3 md:mb-4 text-gray-900 drop-shadow-lg px-2">
               Оставьте заявку
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-6 drop-shadow-md"></div>
-            <p className="text-gray-900 font-semibold drop-shadow-lg">
+            <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-4 md:mb-6 drop-shadow-md"></div>
+            <p className="text-sm md:text-base text-gray-900 font-semibold drop-shadow-lg px-4">
               Заполните форму и мы свяжемся с вами в WhatsApp
             </p>
           </div>
 
           <Card className="bg-white border-2 border-gray-100 shadow-xl">
-            <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <CardContent className="p-4 md:p-8">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2 text-gray-700">Ваше имя</label>
                   <Input
@@ -233,10 +233,10 @@ const Index = () => {
 
                 <Button 
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] hover:opacity-90 text-white font-semibold text-lg py-6 rounded-2xl shadow-lg transition-all hover:scale-[1.02]"
+                  className="w-full bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] hover:opacity-90 text-white font-semibold text-base md:text-lg py-4 md:py-6 rounded-2xl shadow-lg transition-all hover:scale-[1.02]"
                 >
                   Отправить в WhatsApp
-                  <Icon name="Send" size={20} className="ml-2" />
+                  <Icon name="Send" size={18} className="ml-2" />
                 </Button>
               </form>
             </CardContent>
@@ -244,7 +244,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="py-12 px-4 bg-white border-t border-gray-100">
+      <footer className="py-8 md:py-12 px-4 bg-white border-t border-gray-100">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
@@ -294,10 +294,10 @@ const Index = () => {
 
       <button
         onClick={handleWhatsAppClick}
-        className="fixed bottom-8 right-8 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl shadow-[#25D366]/30 transition-all hover:scale-110 z-50"
+        className="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-3 md:p-4 shadow-2xl shadow-[#25D366]/30 transition-all hover:scale-110 z-50"
         aria-label="WhatsApp"
       >
-        <Icon name="MessageCircle" size={28} />
+        <Icon name="MessageCircle" size={24} className="md:w-7 md:h-7" />
       </button>
     </div>
   );
