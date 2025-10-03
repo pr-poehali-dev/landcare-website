@@ -10,7 +10,7 @@ const services = [
     icon: "TreeDeciduous",
     title: "Спил деревьев",
     description: "Профессиональное удаление деревьев любой сложности",
-    image: "https://cdn.poehali.dev/files/289ee704-95a7-4d49-ad5d-da508db44b46.jpg"
+    image: "https://cdn.poehali.dev/files/9e18c783-f673-4027-866c-f2dbc852e3cf.jpg"
   },
   {
     icon: "Scissors",
