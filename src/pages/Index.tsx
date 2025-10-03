@@ -67,12 +67,10 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a]/95 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <div className="relative group">
-            <div className="absolute -inset-2 bg-gradient-to-r from-[#4DB8A8]/20 to-[#FF8A3D]/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
             <img 
-              src="/img/d48849e6-b3bf-4dfd-866c-1cd09a872bba.jpg" 
+              src="https://cdn.poehali.dev/files/3424d412-6840-4bb8-8de1-76645fe846ae.jpg" 
               alt="Удачные заботы" 
-              className="h-20 relative drop-shadow-2xl"
-              style={{ filter: 'drop-shadow(0 0 20px rgba(77, 184, 168, 0.3))' }}
+              className="h-24 relative drop-shadow-2xl"
             />
           </div>
           <a href="tel:+79235335301" className="flex items-center gap-2 text-[#4DB8A8] hover:text-[#FF8A3D] transition-colors">
@@ -84,7 +82,14 @@ const Index = () => {
 
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-['Montserrat'] font-bold mb-6 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] bg-clip-text text-transparent">
+          <div className="flex justify-center mb-8">
+            <img 
+              src="https://cdn.poehali.dev/files/3424d412-6840-4bb8-8de1-76645fe846ae.jpg" 
+              alt="Удачные заботы" 
+              className="h-48 md:h-64 drop-shadow-2xl"
+            />
+          </div>
+          <h1 className="text-4xl md:text-6xl font-['Montserrat'] font-bold mb-6 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] bg-clip-text text-transparent">
             Благоустройство территорий
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
@@ -225,13 +230,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
-              <div className="relative group mb-4">
-                <div className="absolute -inset-3 bg-gradient-to-r from-[#4DB8A8]/20 to-[#FF8A3D]/20 rounded-2xl blur-xl"></div>
+              <div className="mb-4">
                 <img 
-                  src="/img/d48849e6-b3bf-4dfd-866c-1cd09a872bba.jpg" 
+                  src="https://cdn.poehali.dev/files/3424d412-6840-4bb8-8de1-76645fe846ae.jpg" 
                   alt="Удачные заботы" 
-                  className="h-20 mx-auto md:mx-0 relative"
-                  style={{ filter: 'drop-shadow(0 0 20px rgba(77, 184, 168, 0.3))' }}
+                  className="h-24 mx-auto md:mx-0"
                 />
               </div>
               <p className="text-gray-400">
