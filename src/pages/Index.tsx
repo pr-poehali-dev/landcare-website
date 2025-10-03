@@ -263,7 +263,7 @@ const Index = () => {
               <div className="space-y-2 text-slate-600">
                 <div className="flex items-center justify-center md:justify-start gap-2">
                   <Icon name="Phone" size={18} className="text-[#00B4A3]" />
-                  <a href="tel:+79235335301" className="hover:text-[#00B4A3] transition-colors"
+                  <a href="tel:+79235335301" className="hover:text-[#00B4A3] transition-colors">
                     +7 (923) 533-53-01
                   </a>
                 </div>
