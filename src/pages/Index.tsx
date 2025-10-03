@@ -90,10 +90,10 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-['Montserrat'] font-bold mb-6 text-gray-900 drop-shadow-lg">
             Удачные Заботы
           </h1>
-          <p className="text-xl md:text-2xl text-gray-800 mb-8 max-w-3xl mx-auto drop-shadow-md bg-white/80 backdrop-blur-sm py-4 px-6 rounded-2xl">
+          <p className="text-xl md:text-2xl text-gray-900 font-semibold mb-8 max-w-3xl mx-auto drop-shadow-lg">
             Всегда готовы позаботиться о вашем участке. Профессиональное благоустройство территорий с гарантией качества
           </p>
-          <p className="text-lg text-gray-700 mb-8 drop-shadow-md">
+          <p className="text-lg text-gray-800 font-semibold mb-8 drop-shadow-lg">
             Работаем ежедневно с 8:00 до 23:00
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -175,7 +175,7 @@ const Index = () => {
               Оставьте заявку
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-6 drop-shadow-md"></div>
-            <p className="text-gray-800 drop-shadow-md bg-white/80 backdrop-blur-sm py-2 px-4 rounded-lg inline-block">
+            <p className="text-gray-900 font-semibold drop-shadow-lg">
               Заполните форму и мы свяжемся с вами в WhatsApp
             </p>
           </div>
