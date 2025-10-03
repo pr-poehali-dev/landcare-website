@@ -40,7 +40,7 @@ const services = [
     icon: "Trees",
     title: "Уход за кустарниками",
     description: "Обрезка и формирование кустарников",
-    image: "https://cdn.poehali.dev/files/289ee704-95a7-4d49-ad5d-da508db44b46.jpg"
+    image: "https://cdn.poehali.dev/files/fffee30d-f980-4410-ac2d-db4e0e227c3e.jpg"
   }
 ];
 
