@@ -28,7 +28,7 @@ const services = [
     icon: "Sprout",
     title: "Посадка газона",
     description: "Создание газона под ключ с гарантией",
-    image: "https://cdn.poehali.dev/files/bb33ff4a-81cc-40d2-8f2d-0117df7e2828.jpg"
+    image: "https://cdn.poehali.dev/files/d54fdaa6-ac87-48d0-a83b-b69d9fac7dee.jpg"
   },
   {
     icon: "Tractor",
@@ -80,18 +80,14 @@ const Index = () => {
 
       <section className="pt-28 pb-20 px-4 bg-gradient-to-br from-[#4DB8A8]/5 via-white to-[#FF8A3D]/5">
         <div className="container mx-auto text-center">
-          <div className="flex justify-center mb-8 animate-fade-in">
-            <img 
-              src="https://cdn.poehali.dev/files/2cb4fffa-cbb5-4db1-a5cb-587548d42493.jpg" 
-              alt="Удачные заботы" 
-              className="h-48 md:h-72 drop-shadow-2xl"
-            />
-          </div>
-          <h1 className="text-3xl md:text-5xl font-['Montserrat'] font-bold mb-6 text-gray-800">
-            Профессиональное благоустройство территорий
+          <h1 className="text-4xl md:text-6xl font-['Montserrat'] font-bold mb-6 text-gray-800">
+            Удачные Заботы
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Работаем ежедневно с 8:00 до 23:00. Качество и ответственность — наш приоритет
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Всегда готовы позаботиться о вашем участке. Профессиональное благоустройство территорий с гарантией качества
+          </p>
+          <p className="text-lg text-gray-500 mb-8">
+            Работаем ежедневно с 8:00 до 23:00
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
