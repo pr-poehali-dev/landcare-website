@@ -71,7 +71,7 @@ const Index = () => {
             alt="Удачные заботы" 
             className="h-16 md:h-20"
           />
-          <a href="tel:+79235335301" className="flex items-center gap-2 text-[#4DB8A8] hover:text-[#FF8A3D] transition-colors">
+          <a href="tel:+79235335301" className="flex items-center gap-2 text-[#00B4A3] hover:text-[#FF6B35] transition-colors">
             <Icon name="Phone" size={20} />
             <span className="font-semibold hidden sm:inline">+7 (923) 533-53-01</span>
           </a>
@@ -87,26 +87,26 @@ const Index = () => {
           <img src="https://cdn.poehali.dev/files/bb33ff4a-81cc-40d2-8f2d-0117df7e2828.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Poppins'] font-extrabold mb-4 md:mb-6 bg-gradient-to-r from-[#4DB8A8] via-[#FF8A3D] to-[#4DB8A8] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.3)] px-2" style={{WebkitTextStroke: '1px rgba(0,0,0,0.1)'}}>
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Poppins'] font-extrabold mb-4 md:mb-6 bg-gradient-to-r from-[#00B4A3] via-[#FF6B35] to-[#00B4A3] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.4)] px-2" style={{WebkitTextStroke: '1.5px rgba(0,0,0,0.15)'}}>
             Удачные Заботы
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-900 font-bold mb-6 md:mb-8 max-w-3xl mx-auto [text-shadow:_1px_1px_4px_rgba(255,255,255,0.8),_-1px_-1px_4px_rgba(255,255,255,0.8)] px-2">
-            <span className="text-[#4DB8A8] [text-shadow:_2px_2px_6px_rgba(255,255,255,0.9),_-1px_-1px_4px_rgba(255,255,255,0.9)]">Всегда готовы</span> позаботиться о вашем участке. <span className="text-[#FF8A3D] [text-shadow:_2px_2px_6px_rgba(255,255,255,0.9),_-1px_-1px_4px_rgba(255,255,255,0.9)]">Профессиональное благоустройство</span> территорий с гарантией качества
+          <p className="text-lg md:text-xl lg:text-2xl text-slate-800 font-bold mb-6 md:mb-8 max-w-3xl mx-auto [text-shadow:_2px_2px_6px_rgba(255,255,255,0.95),_-1px_-1px_4px_rgba(255,255,255,0.95)] px-2">
+            <span className="text-[#00B4A3] [text-shadow:_2px_2px_8px_rgba(255,255,255,1),_-1px_-1px_6px_rgba(255,255,255,1)]">Всегда готовы</span> позаботиться о вашем участке. <span className="text-[#FF6B35] [text-shadow:_2px_2px_8px_rgba(255,255,255,1),_-1px_-1px_6px_rgba(255,255,255,1)]">Профессиональное благоустройство</span> территорий с гарантией качества
           </p>
-          <p className="text-base md:text-lg font-extrabold mb-6 md:mb-8 [text-shadow:_2px_2px_6px_rgba(255,255,255,0.9),_-1px_-1px_4px_rgba(255,255,255,0.9)]">
-            <span className="text-[#4DB8A8]">⏰ Работаем ежедневно</span> <span className="text-[#FF8A3D]">с 8:00 до 23:00</span>
+          <p className="text-base md:text-lg font-extrabold mb-6 md:mb-8 [text-shadow:_2px_2px_8px_rgba(255,255,255,1),_-1px_-1px_6px_rgba(255,255,255,1)]">
+            <span className="text-[#00B4A3]">⏰ Работаем ежедневно</span> <span className="text-[#FF6B35]">с 8:00 до 23:00</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-[#4DB8A8] hover:bg-[#3da395] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#4DB8A8]/20 hover:shadow-[#4DB8A8]/30 transition-all hover:scale-105"
+              className="bg-[#00B4A3] hover:bg-[#009688] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#00B4A3]/30 hover:shadow-[#00B4A3]/40 transition-all hover:scale-105"
             >
               <Icon name="MessageCircle" size={20} className="mr-2" />
               Написать в WhatsApp
             </Button>
             <Button 
               onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-[#FF8A3D] hover:bg-[#e67a2d] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#FF8A3D]/20 hover:shadow-[#FF8A3D]/30 transition-all hover:scale-105"
+              className="bg-[#FF6B35] hover:bg-[#E85A2A] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#FF6B35]/30 hover:shadow-[#FF6B35]/40 transition-all hover:scale-105"
             >
               Оставить заявку
             </Button>
@@ -124,17 +124,17 @@ const Index = () => {
         </div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-10 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-extrabold mb-3 md:mb-4 bg-gradient-to-r from-[#FF8A3D] to-[#4DB8A8] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.3)] px-2" style={{WebkitTextStroke: '1px rgba(0,0,0,0.1)'}}>
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-extrabold mb-3 md:mb-4 bg-gradient-to-r from-[#FF6B35] to-[#00B4A3] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.4)] px-2" style={{WebkitTextStroke: '1.5px rgba(0,0,0,0.15)'}}>
               Наши услуги
             </h2>
-            <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto drop-shadow-md"></div>
+            <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#FF6B35] to-[#00B4A3] mx-auto drop-shadow-md"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {services.map((service, index) => (
               <Card 
                 key={index} 
-                className="bg-white border-2 border-gray-100 hover:border-[#4DB8A8] transition-all duration-300 group overflow-hidden hover:shadow-xl"
+                className="bg-white border-2 border-gray-100 hover:border-[#00B4A3] transition-all duration-300 group overflow-hidden hover:shadow-xl"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img 
@@ -146,12 +146,12 @@ const Index = () => {
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-[#4DB8A8]/10 rounded-xl group-hover:bg-[#4DB8A8]/20 transition-colors">
-                      <Icon name={service.icon} size={28} className="text-[#4DB8A8]" />
+                    <div className="p-3 bg-[#00B4A3]/10 rounded-xl group-hover:bg-[#00B4A3]/20 transition-colors">
+                      <Icon name={service.icon} size={28} className="text-[#00B4A3]" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-['Poppins'] font-extrabold mb-2 text-gray-950 [text-shadow:_1px_1px_3px_rgba(255,255,255,0.5)]">{service.title}</h3>
-                      <p className="text-gray-900 font-semibold [text-shadow:_1px_1px_2px_rgba(255,255,255,0.4)]">{service.description}</p>
+                      <h3 className="text-xl font-['Poppins'] font-extrabold mb-2 text-slate-900 [text-shadow:_1px_1px_4px_rgba(255,255,255,0.6)]">{service.title}</h3>
+                      <p className="text-slate-700 font-semibold [text-shadow:_1px_1px_3px_rgba(255,255,255,0.5)]">{service.description}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -171,12 +171,12 @@ const Index = () => {
         </div>
         <div className="container mx-auto max-w-2xl relative z-10">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-extrabold mb-3 md:mb-4 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.3)] px-2" style={{WebkitTextStroke: '1px rgba(0,0,0,0.1)'}}>
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-extrabold mb-3 md:mb-4 bg-gradient-to-r from-[#00B4A3] to-[#FF6B35] bg-clip-text text-transparent [text-shadow:_2px_2px_8px_rgba(0,0,0,0.4)] px-2" style={{WebkitTextStroke: '1.5px rgba(0,0,0,0.15)'}}>
               Оставьте заявку
             </h2>
-            <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] mx-auto mb-4 md:mb-6 drop-shadow-md"></div>
-            <p className="text-sm md:text-base font-bold [text-shadow:_1px_1px_4px_rgba(255,255,255,0.8),_-1px_-1px_3px_rgba(255,255,255,0.8)] px-4">
-              <span className="text-gray-900">Заполните форму и мы свяжемся с вами в</span> <span className="text-[#25D366] font-extrabold [text-shadow:_2px_2px_6px_rgba(255,255,255,0.9)]">WhatsApp</span>
+            <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#00B4A3] to-[#FF6B35] mx-auto mb-4 md:mb-6 drop-shadow-md"></div>
+            <p className="text-sm md:text-base font-bold [text-shadow:_2px_2px_6px_rgba(255,255,255,0.95),_-1px_-1px_4px_rgba(255,255,255,0.95)] px-4">
+              <span className="text-slate-800">Заполните форму и мы свяжемся с вами в</span> <span className="text-[#25D366] font-extrabold [text-shadow:_2px_2px_8px_rgba(255,255,255,1)]">WhatsApp</span>
             </p>
           </div>
 
@@ -184,35 +184,35 @@ const Index = () => {
             <CardContent className="p-4 md:p-8">
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 <div>
-                  <label className="block text-sm font-medium mb-2 text-gray-700">Ваше имя</label>
+                  <label className="block text-sm font-medium mb-2 text-slate-700">Ваше имя</label>
                   <Input
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="bg-white border-gray-200 focus:border-[#4DB8A8] focus:ring-[#4DB8A8]"
+                    className="bg-white border-gray-200 focus:border-[#00B4A3] focus:ring-[#00B4A3]"
                     placeholder="Иван Иванов"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium mb-2 text-gray-700">Телефон</label>
+                  <label className="block text-sm font-medium mb-2 text-slate-700">Телефон</label>
                   <Input
                     required
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="bg-white border-gray-200 focus:border-[#4DB8A8] focus:ring-[#4DB8A8]"
+                    className="bg-white border-gray-200 focus:border-[#00B4A3] focus:ring-[#00B4A3]"
                     placeholder="+7 (___) ___-__-__"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2 text-gray-700">Услуга</label>
+                  <label className="block text-sm font-medium mb-2 text-slate-700">Услуга</label>
                   <select
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({...formData, service: e.target.value})}
-                    className="w-full bg-white border border-gray-200 focus:border-[#4DB8A8] focus:ring-[#4DB8A8] rounded-lg px-3 py-2 text-gray-800"
+                    className="w-full bg-white border border-gray-200 focus:border-[#00B4A3] focus:ring-[#00B4A3] rounded-lg px-3 py-2 text-slate-800"
                   >
                     <option value="">Выберите услугу</option>
                     {services.map((service, index) => (
@@ -222,7 +222,7 @@ const Index = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2 text-gray-700">Сообщение</label>
+                  <label className="block text-sm font-medium mb-2 text-slate-700">Сообщение</label>
                   <Textarea
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
@@ -233,7 +233,7 @@ const Index = () => {
 
                 <Button 
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#4DB8A8] to-[#FF8A3D] hover:opacity-90 text-white font-semibold text-base md:text-lg py-4 md:py-6 rounded-2xl shadow-lg transition-all hover:scale-[1.02]"
+                  className="w-full bg-gradient-to-r from-[#00B4A3] to-[#FF6B35] hover:opacity-90 text-white font-semibold text-base md:text-lg py-4 md:py-6 rounded-2xl shadow-lg transition-all hover:scale-[1.02]"
                 >
                   Отправить в WhatsApp
                   <Icon name="Send" size={18} className="ml-2" />
@@ -253,29 +253,29 @@ const Index = () => {
                 alt="Удачные заботы" 
                 className="h-20 mx-auto md:mx-0 mb-4"
               />
-              <p className="text-gray-600">
+              <p className="text-slate-600">
                 Профессиональное благоустройство территорий
               </p>
             </div>
             
             <div>
-              <h3 className="font-['Poppins'] font-bold text-lg mb-4 text-gray-900">Контакты</h3>
-              <div className="space-y-2 text-gray-600">
+              <h3 className="font-['Poppins'] font-bold text-lg mb-4 text-slate-900">Контакты</h3>
+              <div className="space-y-2 text-slate-600">
                 <div className="flex items-center justify-center md:justify-start gap-2">
-                  <Icon name="Phone" size={18} className="text-[#4DB8A8]" />
-                  <a href="tel:+79235335301" className="hover:text-[#4DB8A8] transition-colors">
+                  <Icon name="Phone" size={18} className="text-[#00B4A3]" />
+                  <a href="tel:+79235335301" className="hover:text-[#00B4A3] transition-colors"
                     +7 (923) 533-53-01
                   </a>
                 </div>
                 <div className="flex items-center justify-center md:justify-start gap-2">
-                  <Icon name="Clock" size={18} className="text-[#4DB8A8]" />
+                  <Icon name="Clock" size={18} className="text-[#00B4A3]" />
                   <span>Ежедневно с 8:00 до 23:00</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="font-['Poppins'] font-bold text-lg mb-4 text-gray-900">Свяжитесь с нами</h3>
+              <h3 className="font-['Poppins'] font-bold text-lg mb-4 text-slate-900">Свяжитесь с нами</h3>
               <Button 
                 onClick={handleWhatsAppClick}
                 className="bg-[#25D366] hover:bg-[#20BA5A] text-white"
@@ -286,7 +286,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="mt-12 pt-8 border-t border-gray-100 text-center text-gray-500">
+          <div className="mt-12 pt-8 border-t border-gray-100 text-center text-slate-500">
             <p>&copy; 2024 Удачные заботы. Все права защищены.</p>
           </div>
         </div>
