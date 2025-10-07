@@ -117,7 +117,9 @@ const Index = () => {
               onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
               className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#8B5CF6]/30 hover:shadow-[#8B5CF6]/40 transition-all hover:scale-105"
             >
-              <span className="mr-2 text-2xl font-black">М</span>
+              <svg className="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.5 15.5L15 17L12 14L9 17L7.5 15.5L10.5 12.5L7.5 9.5L9 8L12 11L15 8L16.5 9.5L13.5 12.5L16.5 15.5Z" fill="white"/>
+              </svg>
               Max
             </Button>
             <Button 
