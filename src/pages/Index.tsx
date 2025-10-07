@@ -108,7 +108,9 @@ const Index = () => {
               onClick={() => window.open('https://vk.com/uzabotyrus1', '_blank')}
               className="bg-[#0077FF] hover:bg-[#0066DD] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#0077FF]/30 hover:shadow-[#0077FF]/40 transition-all hover:scale-105"
             >
-              <span className="mr-2 text-2xl font-black">VK</span>
+              <svg className="mr-2" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
+              </svg>
               VK
             </Button>
             <Button 
