@@ -115,10 +115,10 @@ const Index = () => {
             </Button>
             <Button 
               onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
-              className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#8B5CF6]/30 hover:shadow-[#8B5CF6]/40 transition-all hover:scale-105"
+              className="bg-gradient-to-br from-[#3B82F6] via-[#8B5CF6] to-[#A855F7] hover:from-[#2563EB] hover:via-[#7C3AED] hover:to-[#9333EA] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#8B5CF6]/30 hover:shadow-[#8B5CF6]/40 transition-all hover:scale-105"
             >
               <svg className="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.5 15.5L15 17L12 14L9 17L7.5 15.5L10.5 12.5L7.5 9.5L9 8L12 11L15 8L16.5 9.5L13.5 12.5L16.5 15.5Z" fill="white"/>
+                <path d="M12 3C7.03 3 3 6.58 3 11C3 13.39 4.16 15.53 6.03 17L5 21L9.3 19.47C10.15 19.8 11.05 20 12 20C16.97 20 21 16.42 21 12C21 7.58 16.97 4 12 4C12 3.45 12 3 12 3Z" fill="white"/>
               </svg>
               Max
             </Button>
