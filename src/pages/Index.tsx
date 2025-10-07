@@ -4,6 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const services = [
   {
@@ -52,6 +58,8 @@ const Index = () => {
     message: ""
   });
 
+  const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `Новая заявка с сайта:%0A%0AИмя: ${formData.name}%0AТелефон: ${formData.phone}%0AУслуга: ${formData.service}%0AСообщение: ${formData.message}`;
@@ -96,78 +104,13 @@ const Index = () => {
           <p className="text-base md:text-lg font-extrabold mb-6 md:mb-8">
             <span className="text-[#00B4A3]">⏰ Работаем ежедневно</span> <span className="text-[#FF6B35]">с 8:00 до 23:00</span>
           </p>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl border border-gray-100">
-              <h3 className="text-xl md:text-2xl font-['Poppins'] font-bold text-slate-800 mb-6 text-center">
-                💬 Свяжитесь удобным способом
-              </h3>
-              
-              <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4">
-                <button
-                  onClick={handleWhatsAppClick}
-                  className="group relative bg-gradient-to-br from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#25D366]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
-                >
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
-                    <Icon name="MessageCircle" size={28} />
-                  </div>
-                  <span className="font-semibold text-sm md:text-base">WhatsApp</span>
-                </button>
-
-                <button
-                  onClick={() => window.open('https://vk.com/uzabotyrus1', '_blank')}
-                  className="group relative bg-gradient-to-br from-[#0077FF] to-[#0066DD] hover:from-[#0066DD] hover:to-[#0055CC] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#0077FF]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
-                >
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
-                    <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
-                    </svg>
-                  </div>
-                  <span className="font-semibold text-sm md:text-base">VK</span>
-                </button>
-
-                <button
-                  onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
-                  className="group relative bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#7C3AED]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
-                >
-                  <div className="rounded-full flex items-center justify-center overflow-hidden w-14 h-14">
-                    <img 
-                      src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
-                      alt="Max" 
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <span className="font-semibold text-sm md:text-base">Max</span>
-                </button>
-
-                <button
-                  onClick={() => window.open('https://t.me/+79235335301', '_blank')}
-                  className="group relative bg-gradient-to-br from-[#229ED9] to-[#1E8BC3] hover:from-[#1E8BC3] hover:to-[#1A7AAD] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#229ED9]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
-                >
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
-                    <Icon name="Send" size={28} />
-                  </div>
-                  <span className="font-semibold text-sm md:text-base">Telegram</span>
-                </button>
-
-                <button
-                  onClick={() => window.location.href = 'tel:+79235335301'}
-                  className="group relative bg-gradient-to-br from-[#FF6B35] to-[#E85A2A] hover:from-[#E85A2A] hover:to-[#D14A20] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#FF6B35]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
-                >
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
-                    <Icon name="Phone" size={28} />
-                  </div>
-                  <span className="font-semibold text-sm md:text-base">Позвонить</span>
-                </button>
-              </div>
-              
-              <div className="mt-6 text-center">
-                <p className="text-slate-600 text-sm md:text-base font-medium">
-                  📞 <a href="tel:+79235335301" className="text-[#FF6B35] hover:underline font-bold">+7 (923) 533-53-01</a>
-                </p>
-              </div>
-            </div>
-          </div>
+          <Button 
+            onClick={() => setIsContactDialogOpen(true)}
+            className="bg-gradient-to-r from-[#00B4A3] to-[#FF6B35] hover:opacity-90 text-white font-bold text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all hover:scale-105"
+          >
+            <Icon name="MessageCircle" size={28} className="mr-3" />
+            Связаться с нами
+          </Button>
         </div>
       </section>
 
@@ -297,64 +240,7 @@ const Index = () => {
                 </Button>
               </form>
 
-              <div className="mt-6 md:mt-8">
-                <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-4 md:p-6">
-                  <p className="text-center text-sm md:text-base text-slate-700 font-medium mb-4">
-                    💬 Или свяжитесь удобным способом
-                  </p>
-                  
-                  <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-3">
-                    <button
-                      onClick={handleWhatsAppClick}
-                      className="group bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
-                    >
-                      <Icon name="MessageCircle" size={24} />
-                      <span className="text-xs font-semibold">WhatsApp</span>
-                    </button>
 
-                    <button
-                      onClick={() => window.open('https://vk.com/uzabotyrus1', '_blank')}
-                      className="group bg-[#0077FF] hover:bg-[#0066DD] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
-                    >
-                      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
-                      </svg>
-                      <span className="text-xs font-semibold">VK</span>
-                    </button>
-
-                    <button
-                      onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
-                      className="group bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
-                    >
-                      <div className="rounded-full overflow-hidden w-6 h-6">
-                        <img 
-                          src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
-                          alt="Max" 
-                          className="w-full h-full object-cover"
-                          loading="lazy"
-                        />
-                      </div>
-                      <span className="text-xs font-semibold">Max</span>
-                    </button>
-
-                    <button
-                      onClick={() => window.open('https://t.me/+79235335301', '_blank')}
-                      className="group bg-[#229ED9] hover:bg-[#1E8BC3] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
-                    >
-                      <Icon name="Send" size={24} />
-                      <span className="text-xs font-semibold">Telegram</span>
-                    </button>
-
-                    <button
-                      onClick={() => window.location.href = 'tel:+79235335301'}
-                      className="group bg-[#FF6B35] hover:bg-[#E85A2A] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
-                    >
-                      <Icon name="Phone" size={24} />
-                      <span className="text-xs font-semibold">Позвонить</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
             </CardContent>
           </Card>
         </div>
@@ -393,11 +279,11 @@ const Index = () => {
             <div>
               <h3 className="font-['Poppins'] font-bold text-lg mb-4 text-slate-900">Свяжитесь с нами</h3>
               <Button 
-                onClick={handleWhatsAppClick}
-                className="bg-[#25D366] hover:bg-[#20BA5A] text-white"
+                onClick={() => setIsContactDialogOpen(true)}
+                className="bg-gradient-to-r from-[#00B4A3] to-[#FF6B35] hover:opacity-90 text-white font-semibold"
               >
                 <Icon name="MessageCircle" size={20} className="mr-2" />
-                WhatsApp
+                Связаться с нами
               </Button>
             </div>
           </div>
@@ -408,21 +294,91 @@ const Index = () => {
         </div>
       </footer>
 
-      <button
-        onClick={handleWhatsAppClick}
-        className="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 md:p-5 shadow-2xl shadow-[#25D366]/30 transition-all hover:scale-110 z-50"
-        aria-label="WhatsApp"
-      >
-        <Icon name="MessageCircle" size={28} className="md:w-8 md:h-8" />
-      </button>
+      <Dialog open={isContactDialogOpen} onOpenChange={setIsContactDialogOpen}>
+        <DialogContent className="sm:max-w-2xl">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-['Poppins'] font-bold text-center mb-4">
+              💬 Свяжитесь с нами удобным способом
+            </DialogTitle>
+          </DialogHeader>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <button
+              onClick={() => { handleWhatsAppClick(); setIsContactDialogOpen(false); }}
+              className="group bg-gradient-to-br from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+            >
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
+                <Icon name="MessageCircle" size={32} />
+              </div>
+              <span className="font-semibold text-base">WhatsApp</span>
+            </button>
 
-      <a
-        href="tel:+79235335301"
-        className="fixed bottom-4 left-4 md:bottom-8 md:left-8 bg-[#FF6B35] hover:bg-[#E85A2A] text-white rounded-full p-4 md:p-5 shadow-2xl shadow-[#FF6B35]/40 transition-all hover:scale-110 z-50 animate-pulse"
-        aria-label="Позвонить"
-      >
-        <Icon name="Phone" size={28} className="md:w-8 md:h-8" />
-      </a>
+            <button
+              onClick={() => { window.open('https://vk.com/uzabotyrus1', '_blank'); setIsContactDialogOpen(false); }}
+              className="group bg-gradient-to-br from-[#0077FF] to-[#0066DD] hover:from-[#0066DD] hover:to-[#0055CC] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+            >
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
+                <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
+                </svg>
+              </div>
+              <span className="font-semibold text-base">VK</span>
+            </button>
+
+            <button
+              onClick={() => { window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank'); setIsContactDialogOpen(false); }}
+              className="group bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+            >
+              <div className="rounded-full overflow-hidden w-16 h-16">
+                <img 
+                  src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
+                  alt="Max" 
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <span className="font-semibold text-base">Max</span>
+            </button>
+
+            <button
+              onClick={() => { window.open('https://t.me/+79235335301', '_blank'); setIsContactDialogOpen(false); }}
+              className="group bg-gradient-to-br from-[#229ED9] to-[#1E8BC3] hover:from-[#1E8BC3] hover:to-[#1A7AAD] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+            >
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
+                <Icon name="Send" size={32} />
+              </div>
+              <span className="font-semibold text-base">Telegram</span>
+            </button>
+
+            <button
+              onClick={() => { window.location.href = 'tel:+79235335301'; setIsContactDialogOpen(false); }}
+              className="group bg-gradient-to-br from-[#FF6B35] to-[#E85A2A] hover:from-[#E85A2A] hover:to-[#D14A20] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+            >
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
+                <Icon name="Phone" size={32} />
+              </div>
+              <span className="font-semibold text-base">Позвонить</span>
+            </button>
+
+            <button
+              onClick={() => { handleSubmit(new Event('submit') as any); setIsContactDialogOpen(false); }}
+              className="group bg-gradient-to-br from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+            >
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
+                <Icon name="Mail" size={32} />
+              </div>
+              <span className="font-semibold text-base">Форма связи</span>
+            </button>
+          </div>
+
+          <div className="mt-6 text-center border-t pt-6">
+            <p className="text-slate-600 text-base font-medium">
+              📞 <a href="tel:+79235335301" className="text-[#FF6B35] hover:underline font-bold text-lg">+7 (923) 533-53-01</a>
+            </p>
+            <p className="text-slate-500 text-sm mt-2">Работаем ежедневно с 8:00 до 23:00</p>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
