@@ -108,8 +108,8 @@ const Index = () => {
               onClick={() => window.open('https://vk.com/uzabotyrus1', '_blank')}
               className="bg-[#0077FF] hover:bg-[#0066DD] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#0077FF]/30 hover:shadow-[#0077FF]/40 transition-all hover:scale-105"
             >
-              <span className="mr-2 text-2xl font-black">ВК</span>
-              ВКонтакте
+              <span className="mr-2 text-2xl font-black">VK</span>
+              VK
             </Button>
             <Button 
               onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
