@@ -127,11 +127,18 @@ const Index = () => {
 
                 <button
                   onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
-                  className="group relative bg-gradient-to-br from-[#3B82F6] via-[#8B5CF6] to-[#A855F7] hover:from-[#2563EB] hover:via-[#7C3AED] hover:to-[#9333EA] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#8B5CF6]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
+                  className="group relative bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#7C3AED]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
                 >
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 3C7.03 3 3 6.58 3 11C3 13.39 4.16 15.53 6.03 17L5 21L9.3 19.47C10.15 19.8 11.05 20 12 20C16.97 20 21 16.42 21 12C21 7.58 16.97 4 12 4C12 3.45 12 3 12 3Z" fill="white"/>
+                  <div className="bg-white rounded-full p-2.5 group-hover:bg-white/95 transition-all">
+                    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M50 10C40 10 30 15 25 25C20 35 18 45 20 55C22 65 28 73 35 78L32 90L44 85C47 86 48.5 87 50 87C60 87 70 82 75 72C80 62 82 52 80 42C78 32 72 24 65 19C60 14 55 10 50 10Z" fill="url(#max-gradient)"/>
+                      <defs>
+                        <linearGradient id="max-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" style="stop-color:#4169E1;stop-opacity:1" />
+                          <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:#9333EA;stop-opacity:1" />
+                        </linearGradient>
+                      </defs>
                     </svg>
                   </div>
                   <span className="font-semibold text-sm md:text-base">Max</span>
