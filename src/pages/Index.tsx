@@ -318,29 +318,13 @@ const Index = () => {
         </div>
       </footer>
 
-      <div className="fixed bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col gap-3 z-50">
-        <button
-          onClick={handleWhatsAppClick}
-          className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-3 md:p-4 shadow-2xl shadow-[#25D366]/30 transition-all hover:scale-110"
-          aria-label="WhatsApp"
-        >
-          <Icon name="MessageCircle" size={24} className="md:w-7 md:h-7" />
-        </button>
-        <button
-          onClick={() => window.open('https://t.me/+79235335301', '_blank')}
-          className="bg-[#229ED9] hover:bg-[#1E8BC3] text-white rounded-full p-3 md:p-4 shadow-2xl shadow-[#229ED9]/30 transition-all hover:scale-110"
-          aria-label="Telegram"
-        >
-          <Icon name="Send" size={24} className="md:w-7 md:h-7" />
-        </button>
-        <button
-          onClick={() => window.open('https://m.me/', '_blank')}
-          className="bg-[#0084FF] hover:bg-[#006FDB] text-white rounded-full p-3 md:p-4 shadow-2xl shadow-[#0084FF]/30 transition-all hover:scale-110"
-          aria-label="Messenger"
-        >
-          <Icon name="Facebook" size={24} className="md:w-7 md:h-7" />
-        </button>
-      </div>
+      <button
+        onClick={handleWhatsAppClick}
+        className="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 md:p-5 shadow-2xl shadow-[#25D366]/30 transition-all hover:scale-110 z-50"
+        aria-label="WhatsApp"
+      >
+        <Icon name="MessageCircle" size={28} className="md:w-8 md:h-8" />
+      </button>
 
       <a
         href="tel:+79235335301"
