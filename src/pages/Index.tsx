@@ -129,11 +129,12 @@ const Index = () => {
                   onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
                   className="group relative bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#7C3AED]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
                 >
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all flex items-center justify-center">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all flex items-center justify-center overflow-hidden">
                     <img 
                       src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
                       alt="Max" 
-                      className="w-7 h-7"
+                      className="w-7 h-7 object-contain"
+                      loading="lazy"
                     />
                   </div>
                   <span className="font-semibold text-sm md:text-base">Max</span>
