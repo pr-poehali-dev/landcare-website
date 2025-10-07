@@ -295,41 +295,41 @@ const Index = () => {
       </footer>
 
       <Dialog open={isContactDialogOpen} onOpenChange={setIsContactDialogOpen}>
-        <DialogContent className="sm:max-w-2xl">
+        <DialogContent className="sm:max-w-xl">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-['Poppins'] font-bold text-center mb-4">
-              💬 Свяжитесь с нами удобным способом
+            <DialogTitle className="text-xl font-['Poppins'] font-bold text-center mb-2">
+              💬 Свяжитесь с нами
             </DialogTitle>
           </DialogHeader>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             <button
               onClick={() => { handleWhatsAppClick(); setIsContactDialogOpen(false); }}
-              className="group bg-gradient-to-br from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+              className="group bg-gradient-to-br from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
             >
-              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
-                <Icon name="MessageCircle" size={32} />
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                <Icon name="MessageCircle" size={24} />
               </div>
-              <span className="font-semibold text-base">WhatsApp</span>
+              <span className="font-semibold text-sm">WhatsApp</span>
             </button>
 
             <button
               onClick={() => { window.open('https://vk.com/uzabotyrus1', '_blank'); setIsContactDialogOpen(false); }}
-              className="group bg-gradient-to-br from-[#0077FF] to-[#0066DD] hover:from-[#0066DD] hover:to-[#0055CC] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+              className="group bg-gradient-to-br from-[#0077FF] to-[#0066DD] hover:from-[#0066DD] hover:to-[#0055CC] text-white rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
             >
-              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
-                <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
                 </svg>
               </div>
-              <span className="font-semibold text-base">VK</span>
+              <span className="font-semibold text-sm">VK</span>
             </button>
 
             <button
               onClick={() => { window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank'); setIsContactDialogOpen(false); }}
-              className="group bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+              className="group bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
             >
-              <div className="rounded-full overflow-hidden w-16 h-16">
+              <div className="rounded-full overflow-hidden w-12 h-12">
                 <img 
                   src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
                   alt="Max" 
@@ -337,45 +337,45 @@ const Index = () => {
                   loading="lazy"
                 />
               </div>
-              <span className="font-semibold text-base">Max</span>
+              <span className="font-semibold text-sm">Max</span>
             </button>
 
             <button
               onClick={() => { window.open('https://t.me/+79235335301', '_blank'); setIsContactDialogOpen(false); }}
-              className="group bg-gradient-to-br from-[#229ED9] to-[#1E8BC3] hover:from-[#1E8BC3] hover:to-[#1A7AAD] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+              className="group bg-gradient-to-br from-[#229ED9] to-[#1E8BC3] hover:from-[#1E8BC3] hover:to-[#1A7AAD] text-white rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
             >
-              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
-                <Icon name="Send" size={32} />
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                <Icon name="Send" size={24} />
               </div>
-              <span className="font-semibold text-base">Telegram</span>
+              <span className="font-semibold text-sm">Telegram</span>
             </button>
 
             <button
               onClick={() => { window.location.href = 'tel:+79235335301'; setIsContactDialogOpen(false); }}
-              className="group bg-gradient-to-br from-[#FF6B35] to-[#E85A2A] hover:from-[#E85A2A] hover:to-[#D14A20] text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+              className="group bg-gradient-to-br from-[#FF6B35] to-[#E85A2A] hover:from-[#E85A2A] hover:to-[#D14A20] text-white rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
             >
-              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
-                <Icon name="Phone" size={32} />
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                <Icon name="Phone" size={24} />
               </div>
-              <span className="font-semibold text-base">Позвонить</span>
+              <span className="font-semibold text-sm">Позвонить</span>
             </button>
 
             <button
               onClick={() => { handleSubmit(new Event('submit') as any); setIsContactDialogOpen(false); }}
-              className="group bg-gradient-to-br from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-3"
+              className="group bg-gradient-to-br from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
             >
-              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
-                <Icon name="Mail" size={32} />
+              <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                <Icon name="Mail" size={24} />
               </div>
-              <span className="font-semibold text-base">Форма связи</span>
+              <span className="font-semibold text-sm">Форма связи</span>
             </button>
           </div>
 
-          <div className="mt-6 text-center border-t pt-6">
-            <p className="text-slate-600 text-base font-medium">
-              📞 <a href="tel:+79235335301" className="text-[#FF6B35] hover:underline font-bold text-lg">+7 (923) 533-53-01</a>
+          <div className="mt-4 text-center border-t pt-4">
+            <p className="text-slate-600 text-sm font-medium">
+              📞 <a href="tel:+79235335301" className="text-[#FF6B35] hover:underline font-bold">+7 (923) 533-53-01</a>
             </p>
-            <p className="text-slate-500 text-sm mt-2">Работаем ежедневно с 8:00 до 23:00</p>
+            <p className="text-slate-500 text-xs mt-1">Работаем ежедневно с 8:00 до 23:00</p>
           </div>
         </DialogContent>
       </Dialog>
