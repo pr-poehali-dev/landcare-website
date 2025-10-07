@@ -105,6 +105,13 @@ const Index = () => {
               WhatsApp
             </Button>
             <Button 
+              onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
+              className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#8B5CF6]/30 hover:shadow-[#8B5CF6]/40 transition-all hover:scale-105"
+            >
+              <span className="mr-2 text-2xl font-black">М</span>
+              Max
+            </Button>
+            <Button 
               onClick={() => window.open('https://t.me/+79235335301', '_blank')}
               className="bg-[#229ED9] hover:bg-[#1E8BC3] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#229ED9]/30 hover:shadow-[#229ED9]/40 transition-all hover:scale-105"
             >
