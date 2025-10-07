@@ -87,13 +87,13 @@ const Index = () => {
           <img src="https://cdn.poehali.dev/files/bb33ff4a-81cc-40d2-8f2d-0117df7e2828.jpg" alt="" className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Poppins'] font-black mb-4 md:mb-6 [text-shadow:_3px_3px_12px_rgba(255,255,255,1),_-2px_-2px_8px_rgba(255,255,255,1)] px-2" style={{WebkitTextStroke: '1.5px rgba(0,0,0,0.15)'}}>
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-['Poppins'] font-black mb-4 md:mb-6 px-2">
             <span className="text-[#FF6B35]">Удачные</span> <span className="text-[#00B4A3]">Заботы</span>
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-slate-800 font-bold mb-6 md:mb-8 max-w-3xl mx-auto [text-shadow:_2px_2px_6px_rgba(255,255,255,0.95),_-1px_-1px_4px_rgba(255,255,255,0.95)] px-2">
-            <span className="text-[#00B4A3] [text-shadow:_2px_2px_8px_rgba(255,255,255,1),_-1px_-1px_6px_rgba(255,255,255,1)]">Всегда готовы</span> позаботиться о вашем участке. <span className="text-[#FF6B35] [text-shadow:_2px_2px_8px_rgba(255,255,255,1),_-1px_-1px_6px_rgba(255,255,255,1)]">Профессиональное благоустройство</span> территорий с гарантией качества
+          <p className="text-lg md:text-xl lg:text-2xl text-slate-800 font-bold mb-6 md:mb-8 max-w-3xl mx-auto px-2">
+            <span className="text-[#00B4A3]">Всегда готовы</span> позаботиться о вашем участке. <span className="text-[#FF6B35]">Профессиональное благоустройство</span> территорий с гарантией качества
           </p>
-          <p className="text-base md:text-lg font-extrabold mb-6 md:mb-8 [text-shadow:_2px_2px_8px_rgba(255,255,255,1),_-1px_-1px_6px_rgba(255,255,255,1)]">
+          <p className="text-base md:text-lg font-extrabold mb-6 md:mb-8">
             <span className="text-[#00B4A3]">⏰ Работаем ежедневно</span> <span className="text-[#FF6B35]">с 8:00 до 23:00</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
@@ -146,7 +146,7 @@ const Index = () => {
         </div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-10 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-black mb-3 md:mb-4 [text-shadow:_3px_3px_12px_rgba(255,255,255,1),_-2px_-2px_8px_rgba(255,255,255,1)] px-2" style={{WebkitTextStroke: '1.5px rgba(0,0,0,0.15)'}}>
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-black mb-3 md:mb-4 px-2">
               <span className="text-[#FF6B35]">Наши</span> <span className="text-[#00B4A3]">услуги</span>
             </h2>
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#FF6B35] to-[#00B4A3] mx-auto drop-shadow-md"></div>
@@ -172,8 +172,8 @@ const Index = () => {
                       <Icon name={service.icon} size={28} className="text-[#00B4A3]" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-['Poppins'] font-extrabold mb-2 text-slate-900 [text-shadow:_1px_1px_4px_rgba(255,255,255,0.6)]">{service.title}</h3>
-                      <p className="text-slate-700 font-semibold [text-shadow:_1px_1px_3px_rgba(255,255,255,0.5)]">{service.description}</p>
+                      <h3 className="text-xl font-['Poppins'] font-extrabold mb-2 text-slate-900">{service.title}</h3>
+                      <p className="text-slate-700 font-semibold">{service.description}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -193,12 +193,12 @@ const Index = () => {
         </div>
         <div className="container mx-auto max-w-2xl relative z-10">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-black mb-3 md:mb-4 [text-shadow:_3px_3px_12px_rgba(255,255,255,1),_-2px_-2px_8px_rgba(255,255,255,1)] px-2" style={{WebkitTextStroke: '1.5px rgba(0,0,0,0.15)'}}>
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-['Poppins'] font-black mb-3 md:mb-4 px-2">
               <span className="text-[#FF6B35]">Оставьте</span> <span className="text-[#00B4A3]">заявку</span>
             </h2>
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-[#00B4A3] to-[#FF6B35] mx-auto mb-4 md:mb-6 drop-shadow-md"></div>
-            <p className="text-sm md:text-base font-bold [text-shadow:_2px_2px_6px_rgba(255,255,255,0.95),_-1px_-1px_4px_rgba(255,255,255,0.95)] px-4">
-              <span className="text-slate-800">Заполните форму и мы свяжемся с вами в</span> <span className="text-[#25D366] font-extrabold [text-shadow:_2px_2px_8px_rgba(255,255,255,1)]">WhatsApp</span>
+            <p className="text-sm md:text-base font-bold px-4">
+              <span className="text-slate-800">Заполните форму и мы свяжемся с вами в</span> <span className="text-[#25D366] font-extrabold">WhatsApp</span>
             </p>
           </div>
 
