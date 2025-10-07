@@ -330,7 +330,7 @@ const Index = () => {
               onClick={() => { window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank'); setIsContactDialogOpen(false); }}
               className="group bg-white border-2 border-gray-100 hover:border-[#00B4A3] rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5 sm:gap-2"
             >
-              <div className="rounded-full overflow-hidden w-10 h-10 sm:w-12 sm:h-12 ring-4 ring-[#7C3AED] group-hover:ring-[#6D31D9] transition-all shadow-lg">
+              <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl overflow-hidden shadow-md bg-gradient-to-br from-[#7C3AED] via-[#9333EA] to-[#A855F7] group-hover:from-[#6D31D9] group-hover:via-[#8222DB] group-hover:to-[#9333EA] transition-all">
                 <img 
                   src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
                   alt="Max" 
