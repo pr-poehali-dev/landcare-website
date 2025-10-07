@@ -129,17 +129,12 @@ const Index = () => {
                   onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
                   className="group relative bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#7C3AED]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
                 >
-                  <div className="bg-white rounded-full p-2.5 group-hover:bg-white/95 transition-all">
-                    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M50 10C40 10 30 15 25 25C20 35 18 45 20 55C22 65 28 73 35 78L32 90L44 85C47 86 48.5 87 50 87C60 87 70 82 75 72C80 62 82 52 80 42C78 32 72 24 65 19C60 14 55 10 50 10Z" fill="url(#max-gradient)"/>
-                      <defs>
-                        <linearGradient id="max-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" stopColor="#4169E1" stopOpacity="1" />
-                          <stop offset="50%" stopColor="#7C3AED" stopOpacity="1" />
-                          <stop offset="100%" stopColor="#9333EA" stopOpacity="1" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all flex items-center justify-center">
+                    <img 
+                      src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
+                      alt="Max" 
+                      className="w-7 h-7"
+                    />
                   </div>
                   <span className="font-semibold text-sm md:text-base">Max</span>
                 </button>
