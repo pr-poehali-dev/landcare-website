@@ -308,8 +308,8 @@ const Index = () => {
               onClick={() => { handleWhatsAppClick(); setIsContactDialogOpen(false); }}
               className="group bg-white border-2 border-gray-100 hover:border-[#00B4A3] rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5 sm:gap-2"
             >
-              <div className="bg-[#00B4A3]/10 group-hover:bg-[#00B4A3]/20 rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors">
-                <Icon name="MessageCircle" size={20} className="text-[#25D366] sm:w-6 sm:h-6" />
+              <div className="bg-[#25D366] group-hover:bg-[#20BA5A] rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors shadow-md">
+                <Icon name="MessageCircle" size={20} className="text-white sm:w-6 sm:h-6" />
               </div>
               <span className="font-bold text-xs sm:text-sm text-slate-800">WhatsApp</span>
             </button>
@@ -318,9 +318,9 @@ const Index = () => {
               onClick={() => { window.open('https://vk.com/uzabotyrus1', '_blank'); setIsContactDialogOpen(false); }}
               className="group bg-white border-2 border-gray-100 hover:border-[#00B4A3] rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5 sm:gap-2"
             >
-              <div className="bg-[#00B4A3]/10 group-hover:bg-[#00B4A3]/20 rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors">
+              <div className="bg-[#0077FF] group-hover:bg-[#0066DD] rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors shadow-md">
                 <svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-6 sm:h-6">
-                  <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="#0077FF"/>
+                  <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
                 </svg>
               </div>
               <span className="font-bold text-xs sm:text-sm text-slate-800">VK</span>
@@ -330,7 +330,7 @@ const Index = () => {
               onClick={() => { window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank'); setIsContactDialogOpen(false); }}
               className="group bg-white border-2 border-gray-100 hover:border-[#00B4A3] rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5 sm:gap-2"
             >
-              <div className="rounded-full overflow-hidden w-10 h-10 sm:w-12 sm:h-12 ring-2 ring-[#00B4A3]/20 group-hover:ring-[#00B4A3]/40 transition-all">
+              <div className="rounded-full overflow-hidden w-10 h-10 sm:w-12 sm:h-12 ring-4 ring-[#7C3AED] group-hover:ring-[#6D31D9] transition-all shadow-lg">
                 <img 
                   src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
                   alt="Max" 
@@ -345,8 +345,8 @@ const Index = () => {
               onClick={() => { window.open('https://t.me/+79235335301', '_blank'); setIsContactDialogOpen(false); }}
               className="group bg-white border-2 border-gray-100 hover:border-[#00B4A3] rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5 sm:gap-2"
             >
-              <div className="bg-[#00B4A3]/10 group-hover:bg-[#00B4A3]/20 rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors">
-                <Icon name="Send" size={20} className="text-[#229ED9] sm:w-6 sm:h-6" />
+              <div className="bg-[#229ED9] group-hover:bg-[#1E8BC3] rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors shadow-md">
+                <Icon name="Send" size={20} className="text-white sm:w-6 sm:h-6" />
               </div>
               <span className="font-bold text-xs sm:text-sm text-slate-800">Telegram</span>
             </button>
@@ -355,8 +355,8 @@ const Index = () => {
               onClick={() => { window.location.href = 'tel:+79235335301'; setIsContactDialogOpen(false); }}
               className="group bg-white border-2 border-gray-100 hover:border-[#FF6B35] rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5 sm:gap-2"
             >
-              <div className="bg-[#FF6B35]/10 group-hover:bg-[#FF6B35]/20 rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors">
-                <Icon name="Phone" size={20} className="text-[#FF6B35] sm:w-6 sm:h-6" />
+              <div className="bg-[#FF6B35] group-hover:bg-[#E85A2A] rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors shadow-md">
+                <Icon name="Phone" size={20} className="text-white sm:w-6 sm:h-6" />
               </div>
               <span className="font-bold text-xs sm:text-sm text-slate-800">Позвонить</span>
             </button>
@@ -365,8 +365,8 @@ const Index = () => {
               onClick={() => { handleSubmit(new Event('submit') as any); setIsContactDialogOpen(false); }}
               className="group bg-white border-2 border-gray-100 hover:border-[#00B4A3] rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5 sm:gap-2"
             >
-              <div className="bg-[#00B4A3]/10 group-hover:bg-[#00B4A3]/20 rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors">
-                <Icon name="Mail" size={20} className="text-slate-700 sm:w-6 sm:h-6" />
+              <div className="bg-[#00B4A3] group-hover:bg-[#009688] rounded-lg sm:rounded-xl p-2 sm:p-3 transition-colors shadow-md">
+                <Icon name="Mail" size={20} className="text-white sm:w-6 sm:h-6" />
               </div>
               <span className="font-bold text-xs sm:text-sm text-slate-800">Форма связи</span>
             </button>
