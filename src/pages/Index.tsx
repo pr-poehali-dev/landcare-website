@@ -96,46 +96,74 @@ const Index = () => {
           <p className="text-base md:text-lg font-extrabold mb-6 md:mb-8">
             <span className="text-[#00B4A3]">⏰ Работаем ежедневно</span> <span className="text-[#FF6B35]">с 8:00 до 23:00</span>
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
-            <Button 
-              onClick={handleWhatsAppClick}
-              className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#25D366]/30 hover:shadow-[#25D366]/40 transition-all hover:scale-105"
-            >
-              <Icon name="MessageCircle" size={24} className="mr-2" />
-              WhatsApp
-            </Button>
-            <Button 
-              onClick={() => window.open('https://vk.com/uzabotyrus1', '_blank')}
-              className="bg-[#0077FF] hover:bg-[#0066DD] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#0077FF]/30 hover:shadow-[#0077FF]/40 transition-all hover:scale-105"
-            >
-              <svg className="mr-2" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
-              </svg>
-              VK
-            </Button>
-            <Button 
-              onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
-              className="bg-gradient-to-br from-[#3B82F6] via-[#8B5CF6] to-[#A855F7] hover:from-[#2563EB] hover:via-[#7C3AED] hover:to-[#9333EA] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#8B5CF6]/30 hover:shadow-[#8B5CF6]/40 transition-all hover:scale-105"
-            >
-              <svg className="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 3C7.03 3 3 6.58 3 11C3 13.39 4.16 15.53 6.03 17L5 21L9.3 19.47C10.15 19.8 11.05 20 12 20C16.97 20 21 16.42 21 12C21 7.58 16.97 4 12 4C12 3.45 12 3 12 3Z" fill="white"/>
-              </svg>
-              Max
-            </Button>
-            <Button 
-              onClick={() => window.open('https://t.me/+79235335301', '_blank')}
-              className="bg-[#229ED9] hover:bg-[#1E8BC3] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#229ED9]/30 hover:shadow-[#229ED9]/40 transition-all hover:scale-105"
-            >
-              <Icon name="Send" size={24} className="mr-2" />
-              Telegram
-            </Button>
-            <Button 
-              onClick={() => window.location.href = 'tel:+79235335301'}
-              className="bg-[#FF6B35] hover:bg-[#E85A2A] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#FF6B35]/30 hover:shadow-[#FF6B35]/40 transition-all hover:scale-105"
-            >
-              <Icon name="Phone" size={24} className="mr-2" />
-              Позвонить
-            </Button>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl border border-gray-100">
+              <h3 className="text-xl md:text-2xl font-['Poppins'] font-bold text-slate-800 mb-6 text-center">
+                💬 Свяжитесь удобным способом
+              </h3>
+              
+              <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4">
+                <button
+                  onClick={handleWhatsAppClick}
+                  className="group relative bg-gradient-to-br from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#25D366]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
+                >
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                    <Icon name="MessageCircle" size={28} />
+                  </div>
+                  <span className="font-semibold text-sm md:text-base">WhatsApp</span>
+                </button>
+
+                <button
+                  onClick={() => window.open('https://vk.com/uzabotyrus1', '_blank')}
+                  className="group relative bg-gradient-to-br from-[#0077FF] to-[#0066DD] hover:from-[#0066DD] hover:to-[#0055CC] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#0077FF]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
+                >
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                    <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <span className="font-semibold text-sm md:text-base">VK</span>
+                </button>
+
+                <button
+                  onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
+                  className="group relative bg-gradient-to-br from-[#3B82F6] via-[#8B5CF6] to-[#A855F7] hover:from-[#2563EB] hover:via-[#7C3AED] hover:to-[#9333EA] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#8B5CF6]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
+                >
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 3C7.03 3 3 6.58 3 11C3 13.39 4.16 15.53 6.03 17L5 21L9.3 19.47C10.15 19.8 11.05 20 12 20C16.97 20 21 16.42 21 12C21 7.58 16.97 4 12 4C12 3.45 12 3 12 3Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <span className="font-semibold text-sm md:text-base">Max</span>
+                </button>
+
+                <button
+                  onClick={() => window.open('https://t.me/+79235335301', '_blank')}
+                  className="group relative bg-gradient-to-br from-[#229ED9] to-[#1E8BC3] hover:from-[#1E8BC3] hover:to-[#1A7AAD] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#229ED9]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
+                >
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                    <Icon name="Send" size={28} />
+                  </div>
+                  <span className="font-semibold text-sm md:text-base">Telegram</span>
+                </button>
+
+                <button
+                  onClick={() => window.location.href = 'tel:+79235335301'}
+                  className="group relative bg-gradient-to-br from-[#FF6B35] to-[#E85A2A] hover:from-[#E85A2A] hover:to-[#D14A20] text-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl hover:shadow-[#FF6B35]/40 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
+                >
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:bg-white/30 transition-all">
+                    <Icon name="Phone" size={28} />
+                  </div>
+                  <span className="font-semibold text-sm md:text-base">Позвонить</span>
+                </button>
+              </div>
+              
+              <div className="mt-6 text-center">
+                <p className="text-slate-600 text-sm md:text-base font-medium">
+                  📞 <a href="tel:+79235335301" className="text-[#FF6B35] hover:underline font-bold">+7 (923) 533-53-01</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
