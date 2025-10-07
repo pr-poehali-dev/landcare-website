@@ -99,16 +99,24 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-[#00B4A3] hover:bg-[#009688] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#00B4A3]/30 hover:shadow-[#00B4A3]/40 transition-all hover:scale-105"
+              className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#25D366]/30 hover:shadow-[#25D366]/40 transition-all hover:scale-105"
             >
-              <Icon name="MessageCircle" size={20} className="mr-2" />
-              Написать в WhatsApp
+              <Icon name="MessageCircle" size={24} className="mr-2" />
+              WhatsApp
             </Button>
             <Button 
-              onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open('https://t.me/+79235335301', '_blank')}
+              className="bg-[#229ED9] hover:bg-[#1E8BC3] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#229ED9]/30 hover:shadow-[#229ED9]/40 transition-all hover:scale-105"
+            >
+              <Icon name="Send" size={24} className="mr-2" />
+              Telegram
+            </Button>
+            <Button 
+              onClick={() => window.location.href = 'tel:+79235335301'}
               className="bg-[#FF6B35] hover:bg-[#E85A2A] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-lg shadow-[#FF6B35]/30 hover:shadow-[#FF6B35]/40 transition-all hover:scale-105"
             >
-              Оставить заявку
+              <Icon name="Phone" size={24} className="mr-2" />
+              Позвонить
             </Button>
           </div>
         </div>
