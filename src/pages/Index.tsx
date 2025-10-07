@@ -134,9 +134,9 @@ const Index = () => {
                       <path d="M50 10C40 10 30 15 25 25C20 35 18 45 20 55C22 65 28 73 35 78L32 90L44 85C47 86 48.5 87 50 87C60 87 70 82 75 72C80 62 82 52 80 42C78 32 72 24 65 19C60 14 55 10 50 10Z" fill="url(#max-gradient)"/>
                       <defs>
                         <linearGradient id="max-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" style="stop-color:#4169E1;stop-opacity:1" />
-                          <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:1" />
-                          <stop offset="100%" style="stop-color:#9333EA;stop-opacity:1" />
+                          <stop offset="0%" stopColor="#4169E1" stopOpacity="1" />
+                          <stop offset="50%" stopColor="#7C3AED" stopOpacity="1" />
+                          <stop offset="100%" stopColor="#9333EA" stopOpacity="1" />
                         </linearGradient>
                       </defs>
                     </svg>
