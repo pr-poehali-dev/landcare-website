@@ -296,6 +296,65 @@ const Index = () => {
                   <Icon name="Send" size={18} className="ml-2" />
                 </Button>
               </form>
+
+              <div className="mt-6 md:mt-8">
+                <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-4 md:p-6">
+                  <p className="text-center text-sm md:text-base text-slate-700 font-medium mb-4">
+                    💬 Или свяжитесь удобным способом
+                  </p>
+                  
+                  <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-3">
+                    <button
+                      onClick={handleWhatsAppClick}
+                      className="group bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
+                    >
+                      <Icon name="MessageCircle" size={24} />
+                      <span className="text-xs font-semibold">WhatsApp</span>
+                    </button>
+
+                    <button
+                      onClick={() => window.open('https://vk.com/uzabotyrus1', '_blank')}
+                      className="group bg-[#0077FF] hover:bg-[#0066DD] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
+                    >
+                      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.26 36.86C13.71 36.86 7.12 28.75 6.86 15.85H12.14C12.32 25.01 16.71 29.17 20.16 30.04V15.85H25.16V23.96C28.58 23.58 32.23 19.69 33.45 15.85H38.45C37.57 20.56 33.71 24.45 31.03 26.08C33.71 27.42 38.01 30.76 39.86 36.86H34.33C32.93 32.86 29.68 29.68 25.16 29.19V36.86H25.26Z" fill="white"/>
+                      </svg>
+                      <span className="text-xs font-semibold">VK</span>
+                    </button>
+
+                    <button
+                      onClick={() => window.open('https://max.ru/u/f9LHodD0cOIDVemlgyXDNIq7AzHsmJ1xWbxcqWxfUFL2M7-yFrZY7BcHV6s', '_blank')}
+                      className="group bg-gradient-to-br from-[#4169E1] via-[#7C3AED] to-[#9333EA] hover:from-[#3B5FD3] hover:via-[#6D31D9] hover:to-[#8222DB] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
+                    >
+                      <div className="rounded-full overflow-hidden w-6 h-6">
+                        <img 
+                          src="https://cdn.poehali.dev/files/49b06f75-9883-4d34-bd0d-773767f64722.png" 
+                          alt="Max" 
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                      <span className="text-xs font-semibold">Max</span>
+                    </button>
+
+                    <button
+                      onClick={() => window.open('https://t.me/+79235335301', '_blank')}
+                      className="group bg-[#229ED9] hover:bg-[#1E8BC3] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
+                    >
+                      <Icon name="Send" size={24} />
+                      <span className="text-xs font-semibold">Telegram</span>
+                    </button>
+
+                    <button
+                      onClick={() => window.location.href = 'tel:+79235335301'}
+                      className="group bg-[#FF6B35] hover:bg-[#E85A2A] text-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center gap-1.5"
+                    >
+                      <Icon name="Phone" size={24} />
+                      <span className="text-xs font-semibold">Позвонить</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
